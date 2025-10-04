@@ -1,0 +1,16 @@
+autoload -Uz vcs_info
+
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats '%F{green}[%b]%f'
+zstyle ':vcs_info:git:*' actionformats '%F{green}[%b|%F{red}%a%F{green}]%f'
+precmd() {
+  vcs_info
+}
+
+setopt prompt_subst
+PROMPT='%F{cyan}%~%f${vcs_info_msg_0_:+ $vcs_info_msg_0_} %# '
+
+# Show remote host in prompt if connected via SSH
+if [[ -n "$SSH_CONNECTION" ]] || [[ -n "$SSH_TTY" ]]; then
+  PROMPT='%F{magenta}(%m)%f '"$PROMPT"
+fi

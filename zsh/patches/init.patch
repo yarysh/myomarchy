@@ -1,0 +1,37 @@
+Subject: [PATCH] init
+---
+Index: default/bash/init
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/default/bash/init b/default/bash/init
+--- a/default/bash/init	(revision 1e859d37cb7fef6ac687442dc1fe515d01d1302d)
++++ b/default/bash/init	(date 1759610256806)
+@@ -1,20 +1,16 @@
+ if command -v mise &> /dev/null; then
+-  eval "$(mise activate bash)"
+-fi
+-
+-if command -v starship &> /dev/null; then
+-  eval "$(starship init bash)"
++  eval "$(mise activate zsh)"
+ fi
+ 
+ if command -v zoxide &> /dev/null; then
+-  eval "$(zoxide init bash)"
++  eval "$(zoxide init zsh)"
+ fi
+ 
+ if command -v fzf &> /dev/null; then
+-  if [[ -f /usr/share/fzf/completion.bash ]]; then
+-    source /usr/share/fzf/completion.bash
++  if [[ -f /usr/share/fzf/completion.zsh ]]; then
++    source /usr/share/fzf/completion.zsh
+   fi
+-  if [[ -f /usr/share/fzf/key-bindings.bash ]]; then
+-    source /usr/share/fzf/key-bindings.bash
++  if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
++    source /usr/share/fzf/key-bindings.zsh
+   fi
+ fi

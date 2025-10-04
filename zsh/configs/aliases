@@ -1,0 +1,24 @@
+# File system
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias cd="z"
+open() {
+  xdg-open "$@" >/dev/null 2>&1 &
+}
+
+# Directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Tools
+alias d='docker'
+n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
+
+# Git
+alias g='git'
+
+# History
+alias h='history 0'
+alias hl='history 0 | less'
+alias hs='history 0 | grep'
+alias hsi='history 0 | grep -i'

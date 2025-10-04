@@ -1,0 +1,41 @@
+# History control
+HISTFILE=~/.histfile
+HISTSIZE=50000
+SAVEHIST=50000
+
+## History command configuration
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_all_dups   # remove older duplicates completely
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_reduce_blanks     # remove superfluous blanks from commands
+setopt share_history          # share command history data (implies append_history)
+
+# Autocompletion
+autoload -Uz compinit && compinit
+
+# Case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# Highlight items in autocompletion menu
+zstyle ':completion:*' menu select
+
+# Colorize completion listings
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+# Enable completion caching
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.cache/zsh
+
+# Start typing + [Up-Arrow] - fuzzy find history forward
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '\eOA' up-line-or-beginning-search
+bindkey '\e[A' up-line-or-beginning-search
+bindkey '\eOB' down-line-or-beginning-search
+bindkey '\e[B' down-line-or-beginning-search
+
+# Set complete path
+export PATH="$HOME/.local/bin:$PATH"

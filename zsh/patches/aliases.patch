@@ -1,0 +1,49 @@
+Subject: [PATCH] aliases
+---
+Index: default/bash/aliases
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/default/bash/aliases b/default/bash/aliases
+--- a/default/bash/aliases	(revision 1e859d37cb7fef6ac687442dc1fe515d01d1302d)
++++ b/default/bash/aliases	(date 1759611144120)
+@@ -1,19 +1,6 @@
+ # File system
+-alias ls='eza -lh --group-directories-first --icons=auto'
+-alias lsa='ls -a'
+-alias lt='eza --tree --level=2 --long --icons --git'
+-alias lta='lt -a'
+ alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+-alias cd="zd"
+-zd() {
+-  if [ $# -eq 0 ]; then
+-    builtin cd ~ && return
+-  elif [ -d "$1" ]; then
+-    builtin cd "$1"
+-  else
+-    z "$@" && printf "\U000F17A9 " && pwd || echo "Error: Directory not found"
+-  fi
+-}
++alias cd="z"
+ open() {
+   xdg-open "$@" >/dev/null 2>&1 &
+ }
+@@ -25,11 +12,13 @@
+ 
+ # Tools
+ alias d='docker'
+-alias r='rails'
+ n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
+ 
+ # Git
+ alias g='git'
+-alias gcm='git commit -m'
+-alias gcam='git commit -a -m'
+-alias gcad='git commit -a --amend'
++
++# History
++alias h='history 0'
++alias hl='history 0 | less'
++alias hs='history 0 | grep'
++alias hsi='history 0 | grep -i'

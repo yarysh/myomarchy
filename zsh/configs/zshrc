@@ -1,0 +1,8 @@
+# All the default aliases and functions
+# (don't mess with these directly, just overwrite them here!)
+source ~/.zsh/rc
+
+# Autosuggest style
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
+
+# Add your own exports, aliases, and functions here.
