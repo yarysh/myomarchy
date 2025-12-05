@@ -6,9 +6,9 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/default/bash/init b/default/bash/init
---- a/default/bash/init	(revision 1e859d37cb7fef6ac687442dc1fe515d01d1302d)
-+++ b/default/bash/init	(date 1759610256806)
-@@ -1,20 +1,16 @@
+--- a/default/bash/init	(revision 8a37f3dce71b0764e3758cb86478c503a4a8746e)
++++ b/default/bash/init	(date 1764962808993)
+@@ -1,24 +1,16 @@
  if command -v mise &> /dev/null; then
 -  eval "$(mise activate bash)"
 -fi
@@ -17,12 +17,16 @@ diff --git a/default/bash/init b/default/bash/init
 -  eval "$(starship init bash)"
 +  eval "$(mise activate zsh)"
  fi
- 
+
  if command -v zoxide &> /dev/null; then
 -  eval "$(zoxide init bash)"
+-fi
+-
+-if command -v try &> /dev/null; then
+-  eval "$(try init ~/Work/tries)"
 +  eval "$(zoxide init zsh)"
  fi
- 
+
  if command -v fzf &> /dev/null; then
 -  if [[ -f /usr/share/fzf/completion.bash ]]; then
 -    source /usr/share/fzf/completion.bash
