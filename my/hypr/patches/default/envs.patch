@@ -1,0 +1,20 @@
+Subject: [PATCH] default/envs
+---
+Index: my/hypr/configs/default/envs.conf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/my/hypr/configs/default/envs.conf b/my/hypr/configs/default/envs.conf
+--- a/my/hypr/configs/default/envs.conf	(revision 907ff43e3f77c233245a23dc4a4703d7bc864019)
++++ b/my/hypr/configs/default/envs.conf	(date 1765054451187)
+@@ -20,9 +20,6 @@
+   force_zero_scaling = true
+ }
+
+-# Use XCompose file
+-env = XCOMPOSEFILE,~/.XCompose
+-
+ # Don't show update on first launch
+ ecosystem {
+   no_update_news = true

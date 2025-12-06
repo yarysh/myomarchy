@@ -1,0 +1,33 @@
+Subject: [PATCH] default/apps
+---
+Index: my/hypr/configs/default/apps.conf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/my/hypr/configs/default/apps.conf b/my/hypr/configs/default/apps.conf
+--- a/my/hypr/configs/default/apps.conf	(revision 1a8bee51656ba74a052bbe9fc15105f17709b7af)
++++ b/my/hypr/configs/default/apps.conf	(date 1765055768324)
+@@ -1,15 +1,8 @@
+ # App-specific tweaks
+-source = ~/.local/share/omarchy/default/hypr/apps/1password.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/bitwarden.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/browser.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/hyprshot.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/jetbrains.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/localsend.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/pip.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/qemu.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/retroarch.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/steam.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/system.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/terminals.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/walker.conf
+-source = ~/.local/share/omarchy/default/hypr/apps/webcam-overlay.conf
++source = ~/.config/hypr/default/apps/1password.conf
++source = ~/.config/hypr/default/apps/browser.conf
++source = ~/.config/hypr/default/apps/jetbrains.conf
++source = ~/.config/hypr/default/apps/system.conf
++source = ~/.config/hypr/default/apps/terminals.conf
++source = ~/.config/hypr/default/apps/vicinae.conf
++source = ~/.config/hypr/default/apps/webcam-overlay.conf

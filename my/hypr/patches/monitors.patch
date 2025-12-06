@@ -1,0 +1,27 @@
+Subject: [PATCH] monitors
+---
+Index: my/hypr/configs/monitors.conf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/my/hypr/configs/monitors.conf b/my/hypr/configs/monitors.conf
+--- a/my/hypr/configs/monitors.conf	(revision 970f3e6a52f271fc068f16d3d93494d498bcf4c4)
++++ b/my/hypr/configs/monitors.conf	(date 1765056617399)
+@@ -3,12 +3,12 @@
+ # Format: monitor = [port], resolution, position, scale
+
+ # Optimized for retina-class 2x displays, like 13" 2.8K, 27" 5K, 32" 6K.
+-env = GDK_SCALE,2
+-monitor=,preferred,auto,auto
++# env = GDK_SCALE,2
++# monitor=,preferred,auto,auto
+
+ # Good compromise for 27" or 32" 4K monitors (but fractional!)
+-# env = GDK_SCALE,1.75
+-# monitor=,preferred,auto,1.6
++env = GDK_SCALE,1.25
++monitor=,preferred,auto,1.25
+
+ # Straight 1x setup for low-resolution displays like 1080p or 1440p
+ # env = GDK_SCALE,1

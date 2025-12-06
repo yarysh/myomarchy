@@ -1,0 +1,16 @@
+Subject: [PATCH] default/windows
+---
+Index: my/hypr/configs/default/windows.conf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/my/hypr/configs/default/windows.conf b/my/hypr/configs/default/windows.conf
+--- a/my/hypr/configs/default/windows.conf	(revision a429bd2c3dfcd8400462190eb762a8c4eed17925)
++++ b/my/hypr/configs/default/windows.conf	(date 1765055502258)
+@@ -8,4 +8,4 @@
+ windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
+
+ # App-specific tweaks
+-source = ~/.local/share/omarchy/default/hypr/apps.conf
++source = ~/.config/hypr/default/apps.conf
