@@ -1,8 +1,11 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm --needed \
+  neovim
   usage mise \
-  docker docker-buildx docker-compose
+  tldr \
+  docker docker-buildx docker-compose \
+  go
 
 # Start Docker automatically
 sudo systemctl enable docker
