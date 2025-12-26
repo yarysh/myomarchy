@@ -5,7 +5,8 @@ sudo pacman -S --noconfirm --needed \
   usage mise \
   tldr \
   docker docker-buildx docker-compose \
-  go
+  go \
+  jetbrains-toolbox
 
 # Start Docker automatically
 sudo systemctl enable docker
