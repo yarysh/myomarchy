@@ -3,7 +3,6 @@ position = "Top"
 
 [appearance]
 font_name = "JetBrainsMono Nerd Font"
-style = "Solid"
 opacity = 0.8
 
 [appearance.menu]
@@ -12,7 +11,7 @@ opacity = 0.8
 [modules]
 left = [ "Workspaces" ]
 center = [ "Clock" ]
-right = [ "Tray", "Updates", "SystemInfo", "Settings" ]
+right = [ [ "Tray", "SystemInfo", "Settings" ] ]
 
 [workspaces]
 visibility_mode = "All"
@@ -25,7 +24,3 @@ bluetooth_more_cmd = "bluetui"
 remove_airplane_btn = true
 remove_idle_btn = true
 shutdown_cmd = "systemctl poweroff"
-
-[updates]
-check_cmd = "yay -Qua"
-update_cmd = 'ghostty -e bash -c "yay; echo Done - Press enter to exit; read" &'
