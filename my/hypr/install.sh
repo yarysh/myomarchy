@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm --needed \
-  bluetui firefox ghostty nautilus uwsm \
+  bluetui firefox ghostty nautilus hyprpolkitagent uwsm \
   hyprland
 
 yay -S --noconfirm --needed 1password-beta
