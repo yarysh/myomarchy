@@ -2,7 +2,7 @@
 
 sudo pacman -S --noconfirm --needed \
   gnome-keyring polkit-gnome \
-  bluetui firefox ghostty nautilus uwsm \
+  bluetui firefox ghostty gnome-disk-utility nautilus uwsm \
   xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
   hyprland
 
