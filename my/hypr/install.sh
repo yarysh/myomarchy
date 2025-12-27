@@ -23,3 +23,8 @@ EOF
 # Otherwise hypr won't start with message: graphical.target is queued for start, waiting for 60s...
 sudo systemctl disable systemd-networkd-wait-online.service
 sudo systemctl mask systemd-networkd-wait-online.service
+
+# Use Firefox as the default browser
+update-desktop-database ~/.local/share/applications
+xdg-mime default firefox.desktop x-scheme-handler/http
+xdg-mime default firefox.desktop x-scheme-handler/https
