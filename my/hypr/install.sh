@@ -3,6 +3,7 @@
 sudo pacman -S --noconfirm --needed \
   gnome-keyring polkit-gnome \
   bluetui firefox ghostty nautilus uwsm \
+  xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
   hyprland
 
 yay -S --noconfirm --needed 1password-cli 1password-beta
