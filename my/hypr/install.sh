@@ -1,10 +1,11 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm --needed \
-  bluetui firefox ghostty nautilus hyprpolkitagent uwsm \
+  gnome-keyring polkit-gnome \
+  bluetui firefox ghostty nautilus uwsm \
   hyprland
 
-yay -S --noconfirm --needed 1password-beta
+yay -S --noconfirm --needed 1password-cli 1password-beta
 
 sudo pacman -S --noconfirm --needed minizip && yay -S --noconfirm --needed vicinae-bin
 
