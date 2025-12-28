@@ -1,0 +1,29 @@
+Subject: [PATCH] style.css
+---
+Index: my/swayosd/configs/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/my/swayosd/configs/style.css b/my/swayosd/configs/style.css
+--- a/my/swayosd/configs/style.css	(revision b147e69e06bbe70e90966ddabfaed5caaeda5515)
++++ b/my/swayosd/configs/style.css	(date 1766939357004)
+@@ -1,11 +1,14 @@
+-@import "../omarchy/current/theme/swayosd.css";
++@define-color background-color #4C4253;
++@define-color label #CDD6F4;
++@define-color image #CDD6F4;
++@define-color progress #CDD6F4;
+
+ window {
+-  border-radius: 0;
++  border-radius: 10px;
+   opacity: 0.97;
+-  border: 2px solid @border-color;
+-
+   background-color: @background-color;
++  margin-bottom: 1680px;
++  margin-left: 2790px;
+ }
+
+ label {
