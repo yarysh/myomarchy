@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd bin/ && ./build.sh && cd -
 cd fontconfig/ && ./build.sh && cd -
 cd ghostty/ && ./build.sh && cd -
 cd hypr/ && ./build.sh && cd -
