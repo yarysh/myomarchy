@@ -36,9 +36,10 @@ diff --git a/default/bash/aliases b/default/bash/aliases
  open() {
    xdg-open "$@" >/dev/null 2>&1 &
  }
-@@ -32,11 +12,13 @@
+@@ -32,12 +12,13 @@
 
  # Tools
+-alias c='opencode'
  alias d='docker'
 -alias r='rails'
  n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
