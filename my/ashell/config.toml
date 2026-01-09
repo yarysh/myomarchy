@@ -16,7 +16,7 @@ right = [ [ "Tray", "SystemInfo", "Settings" ] ]
 [workspaces]
 visibility_mode = "All"
 enable_workspace_filling = true
-max_workspaces = 5
+max_workspaces = 4
 
 [settings]
 indicators = ["Bluetooth", "Network", "Audio"]
